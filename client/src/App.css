@@ -1,0 +1,89 @@
+/** @format */
+
+:root {
+  --backgroundColor: #131313;
+  --fontColor: #fff;
+  --accentColor: #39d927;
+
+}
+
+* {
+  box-sizing: border-box;
+  background-color: var(--backgroundColor);
+}
+
+.informationInputs {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 600px;
+  color: var(--fontColor);
+}
+
+label {
+  margin: 20px auto 0 auto;
+}
+
+input {
+  width: 300px;
+  margin: auto;
+  font-size: 20px;
+  padding-left: 10px;
+  border: 1px solid var(--accentColor);
+  color: var(--fontColor);
+}
+
+.btns {
+  display: inline-flex;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 650px) {
+    .btns {
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+button {
+  border: 2px solid var(--accentColor);
+  background-color: var(--accentColor, black);
+  color: var(--fontColor);
+  width: 200px;
+  margin: 40px auto 0 auto;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+button:hover {
+  border: 2px solid var(--fontColor);
+  background-color: var(--fontColor);
+  color: var(--accentColor);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+#showEmployeeListHeader {
+  display: inline-flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--fontColor);
+}
+
+.showEmployeeList {
+  display: inline-flex;
+  gap: 20px;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--fontColor);
+  padding-left: 10px;
+}
+
+.showName {
+  font-weight: bold;
+}
+
+.showEmployeeList p {
+  width: 20vw;
+}
