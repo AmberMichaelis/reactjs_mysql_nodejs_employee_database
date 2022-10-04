@@ -1,7 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "https://AmberMichaelis.github.io/react-gh-pages",
+  "homepage": "https://ambermichaelis.github.io/reactjs_mysql_nodejs_employee_database/",
   "private": true,
   "dependencies": {
     "mysql2": "^2.3.3"
