@@ -4,7 +4,6 @@
   --backgroundColor: #131313;
   --fontColor: #fff;
   --accentColor: #39d927;
-
 }
 
 * {
@@ -41,9 +40,9 @@ input {
 }
 
 @media (max-width: 650px) {
-    .btns {
-      display: flex;
-      flex-direction: column;
+  .btns {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -72,18 +71,36 @@ button:hover {
   border-bottom: 1px solid var(--fontColor);
 }
 
+.employeesInfo {
+  display: grid;
+  grid-template-rows: auto auto;
+  border-bottom: 1px solid var(--fontColor);
+}
+
 .showEmployeeList {
   display: inline-flex;
   gap: 20px;
   justify-content: space-around;
-  border-bottom: 1px solid var(--fontColor);
-  padding-left: 10px;
 }
 
 .showName {
   font-weight: bold;
 }
 
-.showEmployeeList p {
-  width: 20vw;
+.updateEmployee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  margin: auto;
+}
+
+.updateEmployee button {
+  margin-bottom: 20px;
+}
+
+.updateBtns {
+  display: inline-flex;
+  gap: 20px;
 }
